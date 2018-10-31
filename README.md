@@ -13,5 +13,7 @@ Here, I have used IPcamera to take picture of a certain area in the cafeteria wi
 ![alt text](https://github.com/niladri30/Cafeteria-Occupancy-with-Samsung-Artik/blob/master/images/ipcam.PNG)
 
 Deploy the Node-Red flow to trigger the complete process. 
+![alt text](https://github.com/niladri30/Cafeteria-Occupancy-with-Samsung-Artik/blob/master/images/node-red.PNG)
+
 
 For person detection, I have taken reference from https://github.com/OlafenwaMoses/ImageAI
