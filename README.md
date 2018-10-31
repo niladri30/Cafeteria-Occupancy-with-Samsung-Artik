@@ -27,5 +27,6 @@ Go to Charts and view the incoming data:
 ## File used:
 1.  face1.py  :  This is used to capture the image from the IPcamera and save it as face1.jpg  
 2.  FirstDetection.py : This is used to run AI on the capture image.
+3.  Download yolo.h5 from: https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/yolo.h5
 
 For person detection, I have taken reference from https://github.com/OlafenwaMoses/ImageAI
