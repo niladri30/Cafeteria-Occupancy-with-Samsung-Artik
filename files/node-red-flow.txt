@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1a4137a0.d75508",
+        "type": "artik cloud out",
+        "z": "be08944c.c62978",
+        "name": "Intel_camera",
+        "deviceid": "a1c7405f8e564a3dacb802b9401634f1",
+        "token": "9057928aa14e4f11a32d1ee89b6143f9",
+        "x": 970,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "275291b4.bc992e",
+        "type": "inject",
+        "z": "be08944c.c62978",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "*/5 12-14 * * 1,2,3,4,5",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 1240,
+        "wires": [
+            [
+                "f7eb65bf.6721e8"
+            ]
+        ]
+    },
+    {
+        "id": "f7eb65bf.6721e8",
+        "type": "bigexec",
+        "z": "be08944c.c62978",
+        "name": "",
+        "command": "python face1.py",
+        "commandArgs": "",
+        "minError": 1,
+        "minWarning": 1,
+        "cwd": "D:/Transfer/person_count",
+        "shell": true,
+        "extraArgumentProperty": "",
+        "envProperty": "",
+        "format": "utf8",
+        "limiter": true,
+        "payloadIs": "triggerNoStdin",
+        "x": 320,
+        "y": 1240.625,
+        "wires": [
+            [
+                "d780a666.a3da58"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d780a666.a3da58",
+        "type": "change",
+        "z": "be08944c.c62978",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "date"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 516.25,
+        "y": 1240,
+        "wires": [
+            [
+                "1c51ccdd.278723"
+            ]
+        ]
+    },
+    {
+        "id": "1c51ccdd.278723",
+        "type": "bigexec",
+        "z": "be08944c.c62978",
+        "name": "",
+        "command": "python FirstDetection.py",
+        "commandArgs": "",
+        "minError": 1,
+        "minWarning": 1,
+        "cwd": "D:/Latest-AI",
+        "shell": true,
+        "extraArgumentProperty": "",
+        "envProperty": "",
+        "format": "utf8",
+        "limiter": true,
+        "payloadIs": "triggerNoStdin",
+        "x": 737.9166870117188,
+        "y": 1228.8194427490234,
+        "wires": [
+            [
+                "1a4137a0.d75508"
+            ],
+            [],
+            []
+        ]
+    }
+]
