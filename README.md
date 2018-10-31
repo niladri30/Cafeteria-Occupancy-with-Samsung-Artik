@@ -13,7 +13,19 @@ Here, I have used IPcamera to take picture of a certain area in the cafeteria wi
 ![alt text](https://github.com/niladri30/Cafeteria-Occupancy-with-Samsung-Artik/blob/master/images/ipcam.PNG)
 
 Deploy the Node-Red flow to trigger the complete process. 
+
 ![alt text](https://github.com/niladri30/Cafeteria-Occupancy-with-Samsung-Artik/blob/master/images/node-red.PNG)
 
+To display on Samsung Artik Cloud, add device by selecting:
+
+![alt text](https://github.com/niladri30/Cafeteria-Occupancy-with-Samsung-Artik/blob/master/images/artik.png)
+
+Go to Charts and view the incoming data:
+
+![alt text](https://github.com/niladri30/Cafeteria-Occupancy-with-Samsung-Artik/blob/master/images/Capture.PNG)
+
+## File used:
+1.  face1.py  :  This is used to capture the image from the IPcamera and save it as face1.jpg  
+2.  FirstDetection.py : This is used to run AI on the capture image.
 
 For person detection, I have taken reference from https://github.com/OlafenwaMoses/ImageAI
